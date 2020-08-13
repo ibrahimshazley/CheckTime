@@ -1,0 +1,16 @@
+D:\X_CORTEX\CheckTime\CheckTime\bin\Debug\netcoreapp2.2\appsettings.Development.json
+D:\X_CORTEX\CheckTime\CheckTime\bin\Debug\netcoreapp2.2\appsettings.json
+D:\X_CORTEX\CheckTime\CheckTime\bin\Debug\netcoreapp2.2\Properties\launchSettings.json
+D:\X_CORTEX\CheckTime\CheckTime\bin\Debug\netcoreapp2.2\CheckTime.deps.json
+D:\X_CORTEX\CheckTime\CheckTime\bin\Debug\netcoreapp2.2\CheckTime.runtimeconfig.json
+D:\X_CORTEX\CheckTime\CheckTime\bin\Debug\netcoreapp2.2\CheckTime.runtimeconfig.dev.json
+D:\X_CORTEX\CheckTime\CheckTime\bin\Debug\netcoreapp2.2\CheckTime.dll
+D:\X_CORTEX\CheckTime\CheckTime\bin\Debug\netcoreapp2.2\CheckTime.pdb
+D:\X_CORTEX\CheckTime\CheckTime\obj\Debug\netcoreapp2.2\CheckTime.csprojAssemblyReference.cache
+D:\X_CORTEX\CheckTime\CheckTime\obj\Debug\netcoreapp2.2\CheckTime.RazorAssemblyInfo.cache
+D:\X_CORTEX\CheckTime\CheckTime\obj\Debug\netcoreapp2.2\CheckTime.RazorAssemblyInfo.cs
+D:\X_CORTEX\CheckTime\CheckTime\obj\Debug\netcoreapp2.2\CheckTime.AssemblyInfoInputs.cache
+D:\X_CORTEX\CheckTime\CheckTime\obj\Debug\netcoreapp2.2\CheckTime.AssemblyInfo.cs
+D:\X_CORTEX\CheckTime\CheckTime\obj\Debug\netcoreapp2.2\CheckTime.RazorTargetAssemblyInfo.cache
+D:\X_CORTEX\CheckTime\CheckTime\obj\Debug\netcoreapp2.2\CheckTime.dll
+D:\X_CORTEX\CheckTime\CheckTime\obj\Debug\netcoreapp2.2\CheckTime.pdb

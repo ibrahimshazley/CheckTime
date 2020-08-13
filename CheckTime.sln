@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29613.14
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CheckTime", "CheckTime\CheckTime.csproj", "{23A0FCD9-D17D-485E-B99C-52D333ECFDE0}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{23A0FCD9-D17D-485E-B99C-52D333ECFDE0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{23A0FCD9-D17D-485E-B99C-52D333ECFDE0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{23A0FCD9-D17D-485E-B99C-52D333ECFDE0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{23A0FCD9-D17D-485E-B99C-52D333ECFDE0}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {7CA70172-6D1F-4C28-A835-E02F8CE90C95}
+	EndGlobalSection
+EndGlobal
