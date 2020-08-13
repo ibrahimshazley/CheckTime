@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\X_CORTEX\\CheckTime\\CheckTime\\CheckTime.csproj": {}
+    "D:\\CheckTime\\CheckTime\\CheckTime.csproj": {}
   },
   "projects": {
-    "D:\\X_CORTEX\\CheckTime\\CheckTime\\CheckTime.csproj": {
+    "D:\\CheckTime\\CheckTime\\CheckTime.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\X_CORTEX\\CheckTime\\CheckTime\\CheckTime.csproj",
+        "projectUniqueName": "D:\\CheckTime\\CheckTime\\CheckTime.csproj",
         "projectName": "CheckTime",
-        "projectPath": "D:\\X_CORTEX\\CheckTime\\CheckTime\\CheckTime.csproj",
+        "projectPath": "D:\\CheckTime\\CheckTime\\CheckTime.csproj",
         "packagesPath": "C:\\Users\\CRIZMA MEGA STORE\\.nuget\\packages\\",
-        "outputPath": "D:\\X_CORTEX\\CheckTime\\CheckTime\\obj\\",
+        "outputPath": "D:\\CheckTime\\CheckTime\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -41,6 +41,10 @@
       "frameworks": {
         "netcoreapp2.2": {
           "dependencies": {
+            "AutoMapper.Extensions.Microsoft.DependencyInjection": {
+              "target": "Package",
+              "version": "[7.0.0, )"
+            },
             "Microsoft.AspNetCore.App": {
               "suppressParent": "All",
               "target": "Package",

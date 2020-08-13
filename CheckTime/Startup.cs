@@ -2,6 +2,8 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using AutoMapper;
+using CheckTime.AutoMapperProfiler;
 using CheckTime.Context;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
@@ -12,6 +14,10 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
+//using CheckTime.Services.Abstraction;
+//using CheckTime.Services.Implementations;
+using CheckTime.Repositories.Abstraction;
+using CheckTime.Repositories.Implementations;
 
 namespace CheckTime
 {
@@ -28,6 +34,13 @@ namespace CheckTime
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddDbContext<CheckTimeContext>(ctx => { ctx.UseSqlServer(Configuration["ConnectionStrings:SqlServerConnectionString"]); });
+
+            //EXTERNAL SERVICES
+            services.AddAutoMapper(typeof(AutoMapperConfiguration));
+            services.AddTransient<IRepository, Repository>();
+
+            //services.AddTransient<IUserService, UserService>();
+
 
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
             services.AddCors();
