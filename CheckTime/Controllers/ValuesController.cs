@@ -5,6 +5,7 @@ using System.Threading.Tasks;
 using CheckTime.Context;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using CheckTime.Services.Abstraction;
 
 namespace CheckTime.Controllers
 {
@@ -12,10 +13,12 @@ namespace CheckTime.Controllers
     [ApiController]
     public class ValuesController : ControllerBase
     {
+        private readonly ICheck _check;
         private readonly CheckTimeContext _context;
-        public ValuesController(CheckTimeContext context)
+        public ValuesController(CheckTimeContext context, ICheck check)
         {
             _context = context;
+            _check = check;
         }
 
         // GET api/values
@@ -30,16 +33,18 @@ namespace CheckTime.Controllers
         [HttpGet("{id}")]
         public async Task<IActionResult> CheckValue(Guid id)
         {
-            var Value = await _context.TimeCheck.FirstOrDefaultAsync(x => x.id == id);
-            if (Value.ToDate > DateTime.Now)
-            {
-                return Ok(true);
-            }
-            else
-            {
-                return Ok(false);
-            }
-           // return Ok(Value);
+           // var Value = await _context.TimeCheck.FirstOrDefaultAsync(x => x.id == id);
+            var res = await _check.checkDateValues(id);
+            return Ok(res);
+            //if (Value.ToDate > DateTime.Now)
+            //{
+            //    return Ok(true);
+            //}
+            //else
+            //{
+            //    return Ok(false);
+            //}
+            // return Ok(Value);
         }
 
         // POST api/values

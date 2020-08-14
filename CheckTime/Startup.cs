@@ -14,8 +14,8 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
-//using CheckTime.Services.Abstraction;
-//using CheckTime.Services.Implementations;
+using CheckTime.Services.Abstraction;
+using CheckTime.Services.Implementations;
 using CheckTime.Repositories.Abstraction;
 using CheckTime.Repositories.Implementations;
 
@@ -38,8 +38,7 @@ namespace CheckTime
             //EXTERNAL SERVICES
             services.AddAutoMapper(typeof(AutoMapperConfiguration));
             services.AddTransient<IRepository, Repository>();
-
-            //services.AddTransient<IUserService, UserService>();
+            services.AddTransient<ICheck, Check>();
 
 
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
